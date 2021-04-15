@@ -1,0 +1,10 @@
+执行ksstack_static
+gcc -Wall -std=c99 -I../ -L../ ksstack_static.c ../ksstack.c -o sample.out
+./sample.out
+这里是静态内存方法使用栈,用户自己分配内存
+
+执行ksstack_user
+gcc -Wall -std=c99 -I../ -L../ ksstack_user.c ../ksstack.c -o sample.out
+./sample.out
+这里是静态和动态内存使用栈,内存由库管理时,用完记得释放呦
+
